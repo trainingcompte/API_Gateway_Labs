@@ -1,0 +1,27 @@
+{
+    "contractors": [
+        {
+            "On site": 70,
+            "Total Contractors": 200
+        }
+    ],
+    "permanent": [
+        {
+            "On site": 350,
+            "Total Employees": 1000
+        }
+    ]
+}
+
+
+-----------------------------------
+
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Employee Status",
+    "type": "object",
+    "properties": {
+        "status": {"type": "string", "enum": ["permanent","contractor"]}
+    },
+    "required": ["status"]
+}
