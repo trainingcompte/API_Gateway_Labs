@@ -1,8 +1,9 @@
+"""
 {
     "content": "$input.body"
 }
 
-
+"""
 
 import json
 import base64
